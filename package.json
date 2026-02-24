@@ -1,6 +1,6 @@
 {
-  "name": "gpwebpay",
-  "version": "0.0.12",
+  "name": "@skuroedov/gpwebpay",
+  "version": "0.1.0",
   "description": "",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -24,7 +24,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Dawast/node-gpwebpay.git"
+    "url": "https://github.com/skuroedov/node-gpwebpay.git"
   },
-  "homepage": "https://github.com/Dawast/node-gpwebpay/blob/master/README.md"
+  "homepage": "https://github.com/skuroedov/node-gpwebpay",
+  "contributors": [
+    "Sergey Kuroedov <me@sergeykuroedov.cz>"
+  ]
 }
