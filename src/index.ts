@@ -5,8 +5,12 @@ import GpWebpayAddInfo from './GpWebpayAddInfo';
 
 export default GpWebpay;
 export {
-  GpWebpay,
-  GpWebpayResponse,
-  GpWebpayRequest,
-  GpWebpayAddInfo,
+    GpWebpay,
+    GpWebpayResponse,
+    GpWebpayRequest,
+    GpWebpayAddInfo,
 };
+
+export * from './ws/GPWebService';
+export * from './ws/types/results';
+export * from './ws/types/params';

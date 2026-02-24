@@ -1,6 +1,5 @@
-import crypto from 'crypto';
-import fs from 'fs';
 import { GpWebpayOperation } from './GPWebpay'
+import {gpSign} from "./lib/keys";
 
 enum GpWebpayRequestCurrency {
   CZK = '203',
@@ -154,10 +153,7 @@ class GpWebpayRequest {
   }
 
   sign(privateKey: string, privateKeyPass: string) {
-    const base = this.getSignatureBase();
-    const sign = crypto.createSign('sha1');
-    sign.update(base);
-    this.digest = sign.sign({ key: privateKey, passphrase: privateKeyPass }, 'base64');
+    this.digest = gpSign(this.getSignatureBase(), privateKey, privateKeyPass);
   }
 }
 
